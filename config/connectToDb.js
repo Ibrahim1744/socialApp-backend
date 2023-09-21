@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 
 module.exports=async()=>{
   try {
-    await mongoose.connect(process.env.MONGO_URL)
+    await mongoose.connect(process.env.MONGO_CLOUD_URL)
     console.log("connected");
     
   } catch (err) {
